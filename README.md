@@ -15,4 +15,4 @@ This project is a simple learning activity to better understand concepts in flut
 4) Visual interactivity with InkWell
 
 
-![tiles_of_chance](tiles_of_chance.gif)
+![tiles_of_chance](ezgif.com-resize.gif)
