@@ -1,8 +1,12 @@
 # tiles_of_chance
 
-A simple game of chance using tiles
+A simple game of chance using tiles.
 
-## Getting Started
+Among the grid of colored tiles, there is one tile that hides a monster. Don't tap on the monster!
+
+Easily reset with the "reset" button to start over.
+
+## Description
 
 This project is a simple learning activity to better understand concepts in flutter.
 1) State management within a widget
