@@ -14,3 +14,5 @@ This project is a simple learning activity to better understand concepts in flut
 3) Layout characteristics with rows and columns
 4) Visual interactivity with InkWell
 
+
+![tiles_of_chance](demo/tiles_of_chance.gif)
