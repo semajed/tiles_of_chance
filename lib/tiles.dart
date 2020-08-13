@@ -8,6 +8,14 @@ class CustomTiles extends StatefulWidget {
   _CustomTilesState createState() => _CustomTilesState();
 }
 
+int generateIndex(String type){
+  Random rand = new Random();
+  int num = type == "row" ? rand.nextInt(5) : rand.nextInt(4);
+  if(num == 0) {num = num + 1;}
+  print(num);
+  return num;
+}
+
 class _CustomTilesState extends State<CustomTiles> {
 
   int _monsterRowLocation = generateIndex("row");
@@ -29,6 +37,8 @@ class _CustomTilesState extends State<CustomTiles> {
       _monsterColLocation = generateIndex("col");
     });
   }
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -185,10 +195,3 @@ class _CustomTilesState extends State<CustomTiles> {
 
 }
 
-int generateIndex(String type){
-  Random rand = new Random();
-  int num = type == "row" ? rand.nextInt(4) : rand.nextInt(3);
-  if(num == 0) {num = num + 1;}
-  print(num);
-  return num;
-}
