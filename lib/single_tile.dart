@@ -10,6 +10,7 @@ class SingleTile extends StatefulWidget {
   int monsterRow;
   int monsterCol;
   bool monsterFound;
+  bool tapped;
   Function(bool) callback;
 
   SingleTile({
@@ -20,11 +21,16 @@ class SingleTile extends StatefulWidget {
     this.monsterRow,
     this.monsterCol,
     this.monsterFound,
+    this.tapped,
     this.callback
   });
 
   @override
   _SingleTileState createState() => _SingleTileState();
+}
+
+bool determineTapped(bool monsterFound){
+
 }
 
 class _SingleTileState extends State<SingleTile> {
@@ -36,7 +42,14 @@ class _SingleTileState extends State<SingleTile> {
     }else{
       return 0.0;
     }
+  }
 
+  Color setColor(bool monsterFound, bool tapped){
+    Color tileColor;
+    if(monsterFound == false && tapped == false){
+      tileColor = Colors.blue;
+    }else
+    return Colors.green;
   }
 
   @override
@@ -46,7 +59,8 @@ class _SingleTileState extends State<SingleTile> {
         child: InkWell(
           child: Ink(
             decoration: BoxDecoration(
-              color: _tapped ? widget.pressedColor : widget.defaultColor,
+              //color: _tapped ? widget.pressedColor : widget.defaultColor,
+              color: setColor(widget.monsterFound, _tapped),
             ),
             height: 150.0,
             child: Opacity(
