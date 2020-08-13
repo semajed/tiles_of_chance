@@ -21,6 +21,7 @@ class _CustomTilesState extends State<CustomTiles> {
   int _monsterRowLocation = generateIndex("row");
   int _monsterColLocation = generateIndex("col");
   bool _monsterFound = false;
+  Color _monsterFoundColor = Colors.green;
 
   callback(bool found){
     setState(() {
@@ -30,7 +31,6 @@ class _CustomTilesState extends State<CustomTiles> {
   }
 
   void reset(){
-    print("button pressed");
     setState(() {
       _monsterFound = false;
       _monsterRowLocation = generateIndex("row");
@@ -71,8 +71,8 @@ class _CustomTilesState extends State<CustomTiles> {
                       columnIndex:1,
                       monsterRow: _monsterRowLocation,
                       monsterCol: _monsterColLocation,
-                      defaultColor: _monsterFound ? Colors.green : Colors.blue,
-                      pressedColor: _monsterFound ? Colors.green : Colors.red,
+                      defaultColor: _monsterFound ? _monsterFoundColor : Colors.blue,
+                      pressedColor: _monsterFound ? _monsterFoundColor : Colors.red,
                       monsterFound: _monsterFound,
                       callback: callback),
                   SingleTile(
@@ -80,8 +80,8 @@ class _CustomTilesState extends State<CustomTiles> {
                       columnIndex:2,
                       monsterRow: _monsterRowLocation,
                       monsterCol: _monsterColLocation,
-                      defaultColor: _monsterFound ? Colors.green : Colors.blue,
-                      pressedColor: _monsterFound ? Colors.green : Colors.red,
+                      defaultColor: _monsterFound ? _monsterFoundColor : Colors.blue,
+                      pressedColor: _monsterFound ? _monsterFoundColor : Colors.red,
                       monsterFound: _monsterFound,
                       callback: callback),
                   SingleTile(
@@ -89,8 +89,8 @@ class _CustomTilesState extends State<CustomTiles> {
                       columnIndex:3,
                       monsterRow: _monsterRowLocation,
                       monsterCol: _monsterColLocation,
-                      defaultColor: _monsterFound ? Colors.green : Colors.blue,
-                      pressedColor: _monsterFound ? Colors.green : Colors.red,
+                      defaultColor: _monsterFound ? _monsterFoundColor : Colors.blue,
+                      pressedColor: _monsterFound ? _monsterFoundColor : Colors.red,
                       monsterFound: _monsterFound,
                       callback: callback),
                 ],
@@ -102,8 +102,8 @@ class _CustomTilesState extends State<CustomTiles> {
                     columnIndex:1,
                     monsterRow: _monsterRowLocation,
                     monsterCol: _monsterColLocation,
-                    defaultColor: _monsterFound ? Colors.green : Colors.blue,
-                    pressedColor: _monsterFound ? Colors.green : Colors.red,
+                    defaultColor: _monsterFound ? _monsterFoundColor : Colors.blue,
+                    pressedColor: _monsterFound ? _monsterFoundColor : Colors.red,
                     monsterFound: _monsterFound,
                     callback: callback),
                 SingleTile(
@@ -111,8 +111,8 @@ class _CustomTilesState extends State<CustomTiles> {
                     columnIndex:2,
                     monsterRow: _monsterRowLocation,
                     monsterCol: _monsterColLocation,
-                    defaultColor: _monsterFound ? Colors.green : Colors.blue,
-                    pressedColor: _monsterFound ? Colors.green : Colors.red,
+                    defaultColor: _monsterFound ? _monsterFoundColor : Colors.blue,
+                    pressedColor: _monsterFound ? _monsterFoundColor : Colors.red,
                     monsterFound: _monsterFound,
                     callback: callback),
                 SingleTile(
@@ -120,8 +120,8 @@ class _CustomTilesState extends State<CustomTiles> {
                     columnIndex:3,
                     monsterRow: _monsterRowLocation,
                     monsterCol: _monsterColLocation,
-                    defaultColor: _monsterFound ? Colors.green : Colors.blue,
-                    pressedColor: _monsterFound ? Colors.green : Colors.red,
+                    defaultColor: _monsterFound ? _monsterFoundColor : Colors.blue,
+                    pressedColor: _monsterFound ? _monsterFoundColor : Colors.red,
                     monsterFound: _monsterFound,
                     callback: callback),
               ],
@@ -133,8 +133,8 @@ class _CustomTilesState extends State<CustomTiles> {
                     columnIndex:1,
                     monsterRow: _monsterRowLocation,
                     monsterCol: _monsterColLocation,
-                    defaultColor: _monsterFound ? Colors.green : Colors.blue,
-                    pressedColor: _monsterFound ? Colors.green : Colors.red,
+                    defaultColor: _monsterFound ? _monsterFoundColor : Colors.blue,
+                    pressedColor: _monsterFound ? _monsterFoundColor : Colors.red,
                     monsterFound: _monsterFound,
                     callback: callback),
                 SingleTile(
@@ -142,8 +142,8 @@ class _CustomTilesState extends State<CustomTiles> {
                     columnIndex:2,
                     monsterRow: _monsterRowLocation,
                     monsterCol: _monsterColLocation,
-                    defaultColor: _monsterFound ? Colors.green : Colors.blue,
-                    pressedColor: _monsterFound ? Colors.green : Colors.red,
+                    defaultColor: _monsterFound ? _monsterFoundColor : Colors.blue,
+                    pressedColor: _monsterFound ? _monsterFoundColor : Colors.red,
                     monsterFound: _monsterFound,
                     callback: callback),
                 SingleTile(
@@ -151,8 +151,8 @@ class _CustomTilesState extends State<CustomTiles> {
                     columnIndex:3,
                     monsterRow: _monsterRowLocation,
                     monsterCol: _monsterColLocation,
-                    defaultColor: _monsterFound ? Colors.green : Colors.blue,
-                    pressedColor: _monsterFound ? Colors.green : Colors.red,
+                    defaultColor: _monsterFound ? _monsterFoundColor : Colors.blue,
+                    pressedColor: _monsterFound ? _monsterFoundColor : Colors.red,
                     monsterFound: _monsterFound,
                     callback: callback),
               ],
@@ -164,8 +164,8 @@ class _CustomTilesState extends State<CustomTiles> {
                     columnIndex:1,
                     monsterRow: _monsterRowLocation,
                     monsterCol: _monsterColLocation,
-                    defaultColor: _monsterFound ? Colors.green : Colors.blue,
-                    pressedColor: _monsterFound ? Colors.green : Colors.red,
+                    defaultColor: _monsterFound ? _monsterFoundColor : Colors.blue,
+                    pressedColor: _monsterFound ? _monsterFoundColor : Colors.red,
                     monsterFound: _monsterFound,
                     callback: callback),
                 SingleTile(
@@ -173,8 +173,8 @@ class _CustomTilesState extends State<CustomTiles> {
                     columnIndex:2,
                     monsterRow: _monsterRowLocation,
                     monsterCol: _monsterColLocation,
-                    defaultColor: _monsterFound ? Colors.green : Colors.blue,
-                    pressedColor: _monsterFound ? Colors.green : Colors.red,
+                    defaultColor: _monsterFound ? _monsterFoundColor : Colors.blue,
+                    pressedColor: _monsterFound ? _monsterFoundColor : Colors.red,
                     monsterFound: _monsterFound,
                     callback: callback),
                 SingleTile(
@@ -182,8 +182,8 @@ class _CustomTilesState extends State<CustomTiles> {
                     columnIndex:3,
                     monsterRow: _monsterRowLocation,
                     monsterCol: _monsterColLocation,
-                    defaultColor: _monsterFound ? Colors.green : Colors.blue,
-                    pressedColor: _monsterFound ? Colors.green : Colors.red,
+                    defaultColor: _monsterFound ? _monsterFoundColor : Colors.blue,
+                    pressedColor: _monsterFound ? _monsterFoundColor : Colors.red,
                     monsterFound: _monsterFound,
                     callback: callback),
               ],
