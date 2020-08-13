@@ -30,6 +30,15 @@ class SingleTile extends StatefulWidget {
 class _SingleTileState extends State<SingleTile> {
   bool _tapped = false;
 
+  double setOpacity(bool monsterFound){
+    if(widget.monsterFound && widget.monsterCol == widget.columnIndex && widget.monsterRow == widget.rowIndex){
+      return 1.0;
+    }else{
+      return 0.0;
+    }
+
+  }
+
   @override
   Widget build(BuildContext context) {
 
@@ -41,9 +50,10 @@ class _SingleTileState extends State<SingleTile> {
             ),
             height: 150.0,
             child: Opacity(
-              opacity: widget.monsterFound ? 1 : 0,
+              //opacity: widget.monsterFound ? 1 : 0,
+              opacity: setOpacity(widget.monsterFound),
               child: Icon(
-                Icons.insert_emoticon,
+                Icons.adb,
                 color: Colors.white,
                 size: 100.0
               ),

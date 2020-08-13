@@ -44,7 +44,7 @@ class _CustomTilesState extends State<CustomTiles> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Tiles of Chance"),
+        title: Text("Find the bug!"),
       ),
       body:
         Column(
